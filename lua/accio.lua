@@ -14,6 +14,8 @@ end
 function M.init()
   require('nvim-treesitter').define_modules({
     accio = {
+      -- Can be overriden by User.
+      enable = true,
       module_path = 'accio.internal',
       is_supported = function(lang)
         return queries.get_query(lang, 'accio') ~= nil

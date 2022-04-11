@@ -18,6 +18,14 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tylersaunders/accio'
 ```
 
+## usage
+
+### pivot_array
+
+Use `<leader>ap` when hovering over a single line array to pivot the array to multiple lines.
+
+![pivot_array demo](./assets/pivot_array.gif)
+
 ## configuration
 
 lua:

@@ -52,7 +52,7 @@ function M.pivot_array()
           -- (So that the spacing appears correct when we write the line later.)
           emptySpace:rep(currentIndent + vim.fn.shiftwidth())
           ..
-          ts_utils.get_node_text(child_node, buffer)[1]
+          vim.treesitter.query.get_node_text(child_node, buffer)
           ..
           -- TODO: Rather than hardcode the seperator, make this per language config.
           ",")
